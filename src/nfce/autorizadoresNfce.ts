@@ -4,39 +4,39 @@ export default {
 		servicos: {
 			autorizacao: {
 				producaoUrl:
-					"https://nfce.sefaz.am.gov.br/nfce-services/services/NfeAutorizacao4",
+					"https://nfce.sefaz.am.gov.br/nfce-services/services/NfeAutorizacao4?wsdl",
 				homologacaoUrl:
 					"https://homnfce.sefaz.am.gov.br/nfce-services/services/NfeAutorizacao4.asmx?wsdl",
 			},
 			retAutorizacao: {
 				producaoUrl:
-					"https://nfce.sefaz.am.gov.br/nfce-services/services/NfeRetAutorizacao4",
+					"https://nfce.sefaz.am.gov.br/nfce-services/services/NfeRetAutorizacao4?wsdl",
 				homologacaoUrl:
 					"https://homnfce.sefaz.am.gov.br/nfce-services/services/NfeRetAutorizacao4.asmx?wsdl",
 			},
 			statusServico: {
 				producaoUrl:
-					"https://nfce.sefaz.am.gov.br/nfce-services/services/NfeStatusServico4",
+					"https://nfce.sefaz.am.gov.br/nfce-services/services/NfeStatusServico4?wsdl",
 				homologacaoUrl:
 					"https://homnfce.sefaz.am.gov.br/nfce-services/services/NfeStatusServico4.asmx?wsdl",
 			},
 			inutilizacao: {
 				producaoUrl:
-					"https://nfce.sefaz.am.gov.br/nfce-services/services/NFeInutilizacao4",
+					"https://nfce.sefaz.am.gov.br/nfce-services/services/NFeInutilizacao4?wsdl",
 				homologacaoUrl:
 					"https://homnfce.sefaz.am.gov.br/nfce-services/services/NFeInutilizacao4.asmx?wsdl",
 			},
 			consultaProtocolo: {
 				producaoUrl:
-					"https://nfce.sefaz.am.gov.br/nfce-services/services/NfeConsulta4",
+					"https://nfce.sefaz.am.gov.br/nfce-services/services/NfeConsulta4?wsdl",
 				homologacaoUrl:
-					"https://homnfce.sefaz.am.gov.br/nfce-services/services/NfeConsulta4",
+					"https://homnfce.sefaz.am.gov.br/nfce-services/services/NfeConsulta4?wsdl",
 			},
 			recepcaoEvento: {
 				producaoUrl:
-					"https://nfce.sefaz.am.gov.br/nfce-services/services/RecepcaoEvento4",
+					"https://nfce.sefaz.am.gov.br/nfce-services/services/RecepcaoEvento4?wsdl",
 				homologacaoUrl:
-					"https://homnfce.sefaz.am.gov.br/nfce-services/services/RecepcaoEvento4",
+					"https://homnfce.sefaz.am.gov.br/nfce-services/services/RecepcaoEvento4?wsdl",
 			},
 		},
 	},
@@ -45,39 +45,39 @@ export default {
 		servicos: {
 			autorizacao: {
 				producaoUrl:
-					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeAutorizacao4?WSDL",
+					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeAutorizacao4?wsdl",
 				homologacaoUrl:
-					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeAutorizacao4?WSDL",
+					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeAutorizacao4?wsdl",
 			},
 			retAutorizacao: {
 				producaoUrl:
-					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeRetAutorizacao4?WSDL",
+					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeRetAutorizacao4?wsdl",
 				homologacaoUrl:
-					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeRetAutorizacao4?WSDL",
+					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeRetAutorizacao4?wsdl",
 			},
 			statusServico: {
 				producaoUrl:
-					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeStatusServico4?WSDL",
+					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeStatusServico4?wsdl",
 				homologacaoUrl:
-					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeStatusServico4?WSDL",
+					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeStatusServico4?wsdl",
 			},
 			inutilizacao: {
 				producaoUrl:
-					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeInutilizacao4?WSDL",
+					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeInutilizacao4?wsdl",
 				homologacaoUrl:
-					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeInutilizacao4?WSDL",
+					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeInutilizacao4?wsdl",
 			},
 			consultaProtocolo: {
 				producaoUrl:
-					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeConsultaProtocolo4?WSDL",
+					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeConsultaProtocolo4?wsdl",
 				homologacaoUrl:
-					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeConsultaProtocolo4?WSDL",
+					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeConsultaProtocolo4?wsdl",
 			},
 			recepcaoEvento: {
 				producaoUrl:
-					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeRecepcaoEvento4?WSDL",
+					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeRecepcaoEvento4?wsdl",
 				homologacaoUrl:
-					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeRecepcaoEvento4?WSDL",
+					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeRecepcaoEvento4?wsdl",
 			},
 		},
 	},
@@ -104,27 +104,27 @@ export default {
 			},
 			inutilizacao: {
 				producaoUrl:
-					"https://nfe.sefaz.go.gov.br/nfe/services/NFeInutilizacao4",
+					"https://nfe.sefaz.go.gov.br/nfe/services/NFeInutilizacao4?wsdl",
 				homologacaoUrl:
-					"https://homolog.sefaz.go.gov.br/nfe/services/Nfeinutilizacao4.asmx",
+					"https://homolog.sefaz.go.gov.br/nfe/services/Nfeinutilizacao4.asmx?wsdl",
 			},
 			consultaProtocolo: {
 				producaoUrl:
-					"https://nfe.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4",
+					"https://nfe.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4?wsdl",
 				homologacaoUrl:
-					"https://homolog.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4",
+					"https://homolog.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4?wsdl",
 			},
 			recepcaoEvento: {
 				producaoUrl:
-					"https://nfe.sefaz.go.gov.br/nfe/services/NFeRecepcaoEvento4",
+					"https://nfe.sefaz.go.gov.br/nfe/services/NFeRecepcaoEvento4?wsdl",
 				homologacaoUrl:
-					"https://homolog.sefaz.go.gov.br/nfe/services/NFeRecepcaoEvento4",
+					"https://homolog.sefaz.go.gov.br/nfe/services/NFeRecepcaoEvento4?wsdl",
 			},
 			consultaCadastro: {
 				producaoUrl:
-					"https://nfe.sefaz.go.gov.br/nfe/services/CadConsultaCadastro4",
+					"https://nfe.sefaz.go.gov.br/nfe/services/CadConsultaCadastro4?wsdl",
 				homologacaoUrl:
-					"https://homolog.sefaz.go.gov.br/nfe/services/CadConsultaCadastro4",
+					"https://homolog.sefaz.go.gov.br/nfe/services/CadConsultaCadastro4?wsdl",
 			},
 		},
 	},
@@ -133,39 +133,39 @@ export default {
 		servicos: {
 			autorizacao: {
 				producaoUrl:
-					"https://nfce.sefaz.mt.gov.br/nfcews/services/NfeAutorizacao4",
+					"https://nfce.sefaz.mt.gov.br/nfcews/services/NfeAutorizacao4?wsdl",
 				homologacaoUrl:
-					"https://homologacao.sefaz.mt.gov.br/nfcews/services/NfeAutorizacao4",
+					"https://homologacao.sefaz.mt.gov.br/nfcews/services/NfeAutorizacao4?wsdl",
 			},
 			retAutorizacao: {
 				producaoUrl:
-					"https://nfce.sefaz.mt.gov.br/nfcews/services/NfeRetAutorizacao4",
+					"https://nfce.sefaz.mt.gov.br/nfcews/services/NfeRetAutorizacao4?wsdl",
 				homologacaoUrl:
-					"https://homologacao.sefaz.mt.gov.br/nfcews/services/NfeRetAutorizacao4",
+					"https://homologacao.sefaz.mt.gov.br/nfcews/services/NfeRetAutorizacao4?wsdl",
 			},
 			statusServico: {
 				producaoUrl:
-					"https://nfce.sefaz.mt.gov.br/nfcews/services/NfeStatusServico4",
+					"https://nfce.sefaz.mt.gov.br/nfcews/services/NfeStatusServico4?wsdl",
 				homologacaoUrl:
-					"https://homologacao.sefaz.mt.gov.br/nfcews/services/NfeStatusServico4",
+					"https://homologacao.sefaz.mt.gov.br/nfcews/services/NfeStatusServico4?wsdl",
 			},
 			inutilizacao: {
 				producaoUrl:
-					"https://nfce.sefaz.mt.gov.br/nfews/v2/services/NfeInutilizacao4",
+					"https://nfce.sefaz.mt.gov.br/nfews/v2/services/NfeInutilizacao4?wsdl",
 				homologacaoUrl:
-					"https://homologacao.sefaz.mt.gov.br/nfcews/services/Nfeinutilizacao4.asmx",
+					"https://homologacao.sefaz.mt.gov.br/nfcews/services/Nfeinutilizacao4.asmx?wsdl",
 			},
 			consultaProtocolo: {
 				producaoUrl:
-					"https://nfce.sefaz.mt.gov.br/nfcews/services/NfeConsulta4",
+					"https://nfce.sefaz.mt.gov.br/nfcews/services/NfeConsulta4?wsdl",
 				homologacaoUrl:
-					"https://homologacao.sefaz.mt.gov.br/nfcews/services/NfeConsulta4",
+					"https://homologacao.sefaz.mt.gov.br/nfcews/services/NfeConsulta4?wsdl",
 			},
 			recepcaoEvento: {
 				producaoUrl:
-					"https://nfce.sefaz.mt.gov.br/nfcews/services/RecepcaoEvento4",
+					"https://nfce.sefaz.mt.gov.br/nfcews/services/RecepcaoEvento4?wsdl",
 				homologacaoUrl:
-					"https://homologacao.sefaz.mt.gov.br/nfcews/services/RecepcaoEvento4",
+					"https://homologacao.sefaz.mt.gov.br/nfcews/services/RecepcaoEvento4?wsdl",
 			},
 		},
 	},
@@ -173,37 +173,41 @@ export default {
 		nome: "Mato Grosso do Sul",
 		servicos: {
 			autorizacao: {
-				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeAutorizacao4",
-				homologacaoUrl: "https://hom.nfce.sefaz.ms.gov.br/ws/NFeAutorizacao4",
+				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeAutorizacao4?wsdl",
+				homologacaoUrl:
+					"https://hom.nfce.sefaz.ms.gov.br/ws/NFeAutorizacao4?wsdl",
 			},
 			retAutorizacao: {
-				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeRetAutorizacao4",
+				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeRetAutorizacao4?wsdl",
 				homologacaoUrl:
-					"https://hom.nfce.sefaz.ms.gov.br/ws/NFeRetAutorizacao4",
+					"https://hom.nfce.sefaz.ms.gov.br/ws/NFeRetAutorizacao4?wsdl",
 			},
 			statusServico: {
-				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeStatusServico4",
-				homologacaoUrl: "https://hom.nfce.sefaz.ms.gov.br/ws/NFeStatusServico4",
+				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeStatusServico4?wsdl",
+				homologacaoUrl:
+					"https://hom.nfce.sefaz.ms.gov.br/ws/NFeStatusServico4?wsdl",
 			},
 			inutilizacao: {
-				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeInutilizacao4",
+				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeInutilizacao4?wsdl",
 				homologacaoUrl:
-					"https://hom.nfce.sefaz.ms.gov.br/ws/Nfeinutilizacao4.asmx",
+					"https://hom.nfce.sefaz.ms.gov.br/ws/Nfeinutilizacao4.asmx?wsdl",
 			},
 			consultaProtocolo: {
-				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeConsultaProtocolo4",
+				producaoUrl:
+					"https://nfce.sefaz.ms.gov.br/ws/NFeConsultaProtocolo4?wsdl",
 				homologacaoUrl:
-					"https://hom.nfce.sefaz.ms.gov.br/ws/NFeConsultaProtocolo4",
+					"https://hom.nfce.sefaz.ms.gov.br/ws/NFeConsultaProtocolo4?wsdl",
 			},
 			recepcaoEvento: {
-				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeRecepcaoEvento4",
+				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/NFeRecepcaoEvento4?wsdl",
 				homologacaoUrl:
-					"https://hom.nfce.sefaz.ms.gov.br/ws/NFeRecepcaoEvento4",
+					"https://hom.nfce.sefaz.ms.gov.br/ws/NFeRecepcaoEvento4?wsdl",
 			},
 			consultaCadastro: {
-				producaoUrl: "https://nfce.sefaz.ms.gov.br/ws/CadConsultaCadastro4",
+				producaoUrl:
+					"https://nfce.sefaz.ms.gov.br/ws/CadConsultaCadastro4?wsdl",
 				homologacaoUrl:
-					"https://hom.nfce.sefaz.ms.gov.br/ws/CadConsultaCadastro4",
+					"https://hom.nfce.sefaz.ms.gov.br/ws/CadConsultaCadastro4?wsdl",
 			},
 		},
 	},
@@ -212,39 +216,39 @@ export default {
 		servicos: {
 			autorizacao: {
 				producaoUrl:
-					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeAutorizacao4",
+					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeAutorizacao4?wsdl",
 				homologacaoUrl:
-					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeAutorizacao4",
+					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeAutorizacao4?wsdl",
 			},
 			retAutorizacao: {
 				producaoUrl:
-					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeRetAutorizacao4",
+					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeRetAutorizacao4?wsdl",
 				homologacaoUrl:
-					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeRetAutorizacao4",
+					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeRetAutorizacao4?wsdl",
 			},
 			statusServico: {
 				producaoUrl:
-					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeStatusServico4",
+					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeStatusServico4?wsdl",
 				homologacaoUrl:
-					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeStatusServico4",
+					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeStatusServico4?wsdl",
 			},
 			inutilizacao: {
 				producaoUrl:
-					"https://nfce.fazenda.mg.gov.br/nfe2/services/NFeInutilizacao4",
+					"https://nfce.fazenda.mg.gov.br/nfe2/services/NFeInutilizacao4?wsdl",
 				homologacaoUrl:
-					"https://hnfce.fazenda.mg.gov.br/nfce/services/Nfeinutilizacao4.asmx",
+					"https://hnfce.fazenda.mg.gov.br/nfce/services/Nfeinutilizacao4.asmx?wsdl",
 			},
 			consultaProtocolo: {
 				producaoUrl:
-					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeConsultaProtocolo4",
+					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeConsultaProtocolo4?wsdl",
 				homologacaoUrl:
-					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeConsultaProtocolo4",
+					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeConsultaProtocolo4?wsdl",
 			},
 			recepcaoEvento: {
 				producaoUrl:
-					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeRecepcaoEvento4",
+					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeRecepcaoEvento4?wsdl",
 				homologacaoUrl:
-					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeRecepcaoEvento4",
+					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeRecepcaoEvento4?wsdl",
 			},
 		},
 	},
@@ -252,24 +256,24 @@ export default {
 		nome: "Paraná",
 		servicos: {
 			autorizacao: {
-				producaoUrl: "https://nfce.sefa.pr.gov.br/nfce/NFeAutorizacao4",
+				producaoUrl: "https://nfce.sefa.pr.gov.br/nfce/NFeAutorizacao4?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeAutorizacao4",
+					"https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeAutorizacao4?wsdl",
 			},
 			retAutorizacao: {
-				producaoUrl: "https://nfce.sefa.pr.gov.br/nfce/NFeRetAutorizacao4",
+				producaoUrl: "https://nfce.sefa.pr.gov.br/nfce/NFeRetAutorizacao4?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeRetAutorizacao4",
+					"https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeRetAutorizacao4?wsdl",
 			},
 			statusServico: {
-				producaoUrl: "https://nfce.sefa.pr.gov.br/nfce/NFeStatusServico4",
+				producaoUrl: "https://nfce.sefa.pr.gov.br/nfce/NFeStatusServico4?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeStatusServico4",
+					"https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeStatusServico4?wsdl",
 			},
 			inutilizacao: {
-				producaoUrl: "https://nfce.sefa.pr.gov.br/nfe/NFeInutilizacao4",
+				producaoUrl: "https://nfce.sefa.pr.gov.br/nfe/NFeInutilizacao4?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.sefa.pr.gov.br/nfce/Nfeinutilizacao4.asmx",
+					"https://homologacao.nfce.sefa.pr.gov.br/nfce/Nfeinutilizacao4.asmx?wsdl",
 			},
 			consultaProtocolo: {
 				producaoUrl:
@@ -295,39 +299,39 @@ export default {
 		servicos: {
 			autorizacao: {
 				producaoUrl:
-					"https://nfce.sefazrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
+					"https://nfce.sefazrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
 				homologacaoUrl:
 					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
 			},
 			retAutorizacao: {
 				producaoUrl:
-					"https://nfce.sefazrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
+					"https://nfce.sefazrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
 				homologacaoUrl:
 					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
 			},
 			statusServico: {
 				producaoUrl:
-					"https://nfce.sefazrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
+					"https://nfce.sefazrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
 				homologacaoUrl:
 					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
 			},
 			inutilizacao: {
 				producaoUrl:
-					"https://nfce.sefazrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
+					"https://nfce.sefazrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
 				homologacaoUrl:
-					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
+					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
 			},
 			consultaProtocolo: {
 				producaoUrl:
-					"https://nfce.sefazrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+					"https://nfce.sefazrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
 				homologacaoUrl:
-					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
 			},
 			recepcaoEvento: {
 				producaoUrl:
-					"https://nfce.sefazrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+					"https://nfce.sefazrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
 				homologacaoUrl:
-					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
 			},
 		},
 	},
@@ -336,39 +340,39 @@ export default {
 		servicos: {
 			autorizacao: {
 				producaoUrl:
-					"https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
+					"https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
 				homologacaoUrl:
-					"https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
+					"https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
 			},
 			retAutorizacao: {
 				producaoUrl:
-					"https://nfce.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
+					"https://nfce.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
 				homologacaoUrl:
-					"https://nfce-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
+					"https://nfce-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
 			},
 			statusServico: {
 				producaoUrl:
-					"https://nfce.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
+					"https://nfce.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
 				homologacaoUrl:
-					"https://nfce-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
+					"https://nfce-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
 			},
 			inutilizacao: {
 				producaoUrl:
-					"https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
+					"https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
 				homologacaoUrl:
-					"https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
+					"https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
 			},
 			consultaProtocolo: {
 				producaoUrl:
-					"https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+					"https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
 				homologacaoUrl:
-					"https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+					"https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
 			},
 			recepcaoEvento: {
 				producaoUrl:
-					"https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+					"https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
 				homologacaoUrl:
-					"https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+					"https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
 			},
 		},
 	},
@@ -376,43 +380,46 @@ export default {
 		nome: "São Paulo",
 		servicos: {
 			autorizacao: {
-				producaoUrl: "https://nfce.fazenda.sp.gov.br/ws/NFeAutorizacao4.asmx",
+				producaoUrl:
+					"https://nfce.fazenda.sp.gov.br/ws/NFeAutorizacao4.asmx?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.fazenda.sp.gov.br/ws/NFeAutorizacao4.asmx",
+					"https://homologacao.nfce.fazenda.sp.gov.br/ws/NFeAutorizacao4.asmx?wsdl",
 			},
 			retAutorizacao: {
 				producaoUrl:
-					"https://nfce.fazenda.sp.gov.br/ws/NFeRetAutorizacao4.asmx",
+					"https://nfce.fazenda.sp.gov.br/ws/NFeRetAutorizacao4.asmx?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.fazenda.sp.gov.br/ws/NFeRetAutorizacao4.asmx",
+					"https://homologacao.nfce.fazenda.sp.gov.br/ws/NFeRetAutorizacao4.asmx?wsdl",
 			},
 			statusServico: {
-				producaoUrl: "https://nfce.fazenda.sp.gov.br/ws/NFeStatusServico4.asmx",
+				producaoUrl:
+					"https://nfce.fazenda.sp.gov.br/ws/NFeStatusServico4.asmx?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.fazenda.sp.gov.br/ws/NFeStatusServico4.asmx",
+					"https://homologacao.nfce.fazenda.sp.gov.br/ws/NFeStatusServico4.asmx?wsdl",
 			},
 			inutilizacao: {
-				producaoUrl: "https://nfce.fazenda.sp.gov.br/ws/nfeinutilizacao4.asmx",
+				producaoUrl:
+					"https://nfce.fazenda.sp.gov.br/ws/nfeinutilizacao4.asmx?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.fazenda.sp.gov.br/ws/nfeinutilizacao4.asmx",
+					"https://homologacao.nfce.fazenda.sp.gov.br/ws/nfeinutilizacao4.asmx?wsdl",
 			},
 			consultarProtocolo: {
 				producaoUrl:
-					"https://nfce.fazenda.sp.gov.br/ws/nfeconsultaprotocolo4.asmx",
+					"https://nfce.fazenda.sp.gov.br/ws/nfeconsultaprotocolo4.asmx?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.fazenda.sp.gov.br/ws/nfeconsultaprotocolo4.asmx",
+					"https://homologacao.nfce.fazenda.sp.gov.br/ws/nfeconsultaprotocolo4.asmx?wsdl",
 			},
 			consultarCadastro: {
 				producaoUrl:
-					"https://nfce.fazenda.sp.gov.br/ws/cadconsultacadastro4.asmx",
+					"https://nfce.fazenda.sp.gov.br/ws/cadconsultacadastro4.asmx?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.fazenda.sp.gov.br/ws/cadconsultacadastro4.asmx",
+					"https://homologacao.nfce.fazenda.sp.gov.br/ws/cadconsultacadastro4.asmx?wsdl",
 			},
 			recepcaoEvento: {
 				producaoUrl:
-					"https://nfce.fazenda.sp.gov.br/ws/nferecepcaoevento4.asmx",
+					"https://nfce.fazenda.sp.gov.br/ws/nferecepcaoevento4.asmx?wsdl",
 				homologacaoUrl:
-					"https://homologacao.nfce.fazenda.sp.gov.br/ws/nferecepcaoevento4.asmx",
+					"https://homologacao.nfce.fazenda.sp.gov.br/ws/nferecepcaoevento4.asmx?wsdl",
 			},
 		},
 	},

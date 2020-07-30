@@ -20,6 +20,9 @@
 		"preserveSymlinks": true,
 		"noImplicitAny": false,
 		"declaration": true,
+		"noEmit": true,
+		"allowJs": true,
+		"checkJs": true,
 		"typeRoots": ["src/typings", "node_modules/@types"]
 	},
 	"exclude": ["node_modules", "build"],

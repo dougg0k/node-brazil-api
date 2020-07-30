@@ -1,0 +1,13 @@
+export const AUTORIZACAO = "autorizacao";
+export const RET_AUTORIZACAO = "retAutorizacao";
+export const STATUS_SERVICO = "statusServico";
+export const INUTILIZACAO = "inutilizacao";
+export const CONSULTA_PROTOCOLO = "consultaProtocolo";
+export const RECEPCAO_EVENTO = "recepcaoEvento";
+export const CONSULTA_CADASTRO = "consultaCadastro";
+export const DISTRIBUICAO_DFE = "distribuicaoDFe";
+export const RECEPCAO_OS = "recepcaoOS";
+export const CONSULTA = "consulta";
+export const CONST_NAO_ENC = "consNaoEnc";
+export const RECEPCAO_SINC = "recepcaoSinc";
+export const QR_CODE = "qrCode";
