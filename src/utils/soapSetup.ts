@@ -1,16 +1,18 @@
 import soap, { Client } from "soap";
 import config from "../config";
 
-const options = {
-	wsdl_options: {
-		forever: true,
-		rejectUnauthorized: false,
-		strictSSL: false,
-		pfx: config.GOV_PFX_CERTIFICATE,
-		passphrase: config.GOV_CERTIFICATE_PASSWORD,
-	},
-};
-
-export async function clientSoap(url: string): Promise<Client> {
-	return await soap.createClientAsync(url, options);
+export async function clientSoap(
+	url: string,
+	options?: { certificatePfx: Buffer; passphrase: string },
+): Promise<Client> {
+	const allOptions = {
+		wsdl_options: {
+			forever: true,
+			rejectUnauthorized: false,
+			strictSSL: false,
+			pfx: options?.certificatePfx || config.GOV_PFX_CERTIFICATE,
+			passphrase: options?.passphrase || config.GOV_CERTIFICATE_PASSWORD,
+		},
+	};
+	return await soap.createClientAsync(url, allOptions);
 }

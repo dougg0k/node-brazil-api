@@ -4,36 +4,43 @@ export default {
 		servicos: {
 			recepcao: {
 				producaoUrl: "https://cte.sefaz.mt.gov.br/ctews/services/CteRecepcao",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.sefaz.mt.gov.br/ctews/services/CteRecepcao",
 			},
 			retRecepcao: {
 				producaoUrl:
 					"https://cte.sefaz.mt.gov.br/ctews/services/CteRetRecepcao",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.sefaz.mt.gov.br/ctews/services/CteRetRecepcao",
 			},
 			inutilizacao: {
 				producaoUrl:
 					"https://cte.sefaz.mt.gov.br/ctews/services/CteInutilizacao",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.sefaz.mt.gov.br/ctews/services/CteInutilizacao",
 			},
 			consultaProtocolo: {
 				producaoUrl: "https://cte.sefaz.mt.gov.br/ctews/services/CteConsulta",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.sefaz.mt.gov.br/ctews/services/CteConsulta",
 			},
 			statusServico: {
 				producaoUrl:
 					"https://cte.sefaz.mt.gov.br/ctews/services/CteStatusServico",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.sefaz.mt.gov.br/ctews/services/CteStatusServico",
 			},
 			recepcaoEvento: {
 				producaoUrl:
 					"https://cte.sefaz.mt.gov.br/ctews2/services/CteRecepcaoEvento?wsdl",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.sefaz.mt.gov.br/ctews2/services/CteRecepcaoEvento?wsdl",
 			},
 			recepcaoOS: {
 				producaoUrl:
 					"https://cte.sefaz.mt.gov.br/ctews/services/CteRecepcaoOS?wsdl",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.sefaz.mt.gov.br/ctews/services/CteRecepcaoOS?wsdl",
 			},
 		},
 	},
@@ -42,35 +49,37 @@ export default {
 		servicos: {
 			recepcao: {
 				producaoUrl: "https://producao.cte.ms.gov.br/ws/CteRecepcao",
-				homologacaoUrl: "",
+				homologacaoUrl: "https://homologacao.cte.ms.gov.br/ws/CteRecepcao",
 			},
 			retRecepcao: {
 				producaoUrl: "https://producao.cte.ms.gov.br/ws/CteRetRecepcao",
-				homologacaoUrl: "",
+				homologacaoUrl: "https://homologacao.cte.ms.gov.br/ws/CteRetRecepcao",
 			},
 			inutilizacao: {
 				producaoUrl: "https://producao.cte.ms.gov.br/ws/CteInutilizacao",
-				homologacaoUrl: "",
+				homologacaoUrl: "https://homologacao.cte.ms.gov.br/ws/CteInutilizacao",
 			},
 			consultaProtocolo: {
 				producaoUrl: "https://producao.cte.ms.gov.br/ws/CteConsulta",
-				homologacaoUrl: "",
+				homologacaoUrl: "https://homologacao.cte.ms.gov.br/ws/CteConsulta",
 			},
 			statusServico: {
 				producaoUrl: "https://producao.cte.ms.gov.br/ws/CteStatusServico",
-				homologacaoUrl: "",
+				homologacaoUrl: "https://homologacao.cte.ms.gov.br/ws/CteStatusServico",
 			},
 			consultaCadastro: {
 				producaoUrl: "https://nfe.sefaz.ms.gov.br/ws/CadConsultaCadastro4",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://hom.nfe.sefaz.ms.gov.br/ws/CadConsultaCadastro4",
 			},
 			recepcaoEvento: {
 				producaoUrl: "https://producao.cte.ms.gov.br/ws/CteRecepcaoEvento",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.cte.ms.gov.br/ws/CteRecepcaoEvento",
 			},
 			recepcaoOS: {
 				producaoUrl: "https://producao.cte.ms.gov.br/ws/CteRecepcaoOS",
-				homologacaoUrl: "",
+				homologacaoUrl: "https://homologacao.cte.ms.gov.br/ws/CteRecepcaoOS",
 			},
 		},
 	},
@@ -79,35 +88,42 @@ export default {
 		servicos: {
 			recepcao: {
 				producaoUrl: "https://cte.fazenda.mg.gov.br/cte/services/CteRecepcao",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://hcte.fazenda.mg.gov.br/cte/services/CteRecepcao?wsdl",
 			},
 			retRecepcao: {
 				producaoUrl:
 					"https://cte.fazenda.mg.gov.br/cte/services/CteRetRecepcao",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://hcte.fazenda.mg.gov.br/cte/services/CteRetRecepcao?wsdl",
 			},
 			inutilizacao: {
 				producaoUrl:
 					"https://cte.fazenda.mg.gov.br/cte/services/CteInutilizacao",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://hcte.fazenda.mg.gov.br/cte/services/CteInutilizacao?wsdl",
 			},
 			consultaProtocolo: {
 				producaoUrl: "https://cte.fazenda.mg.gov.br/cte/services/CteConsulta",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://hcte.fazenda.mg.gov.br/cte/services/CteConsulta?wsdl",
 			},
 			statusServico: {
 				producaoUrl:
 					"https://cte.fazenda.mg.gov.br/cte/services/CteStatusServico",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://hcte.fazenda.mg.gov.br/cte/services/CteStatusServico?wsdl",
 			},
 			recepcaoEvento: {
 				producaoUrl:
 					"https://cte.fazenda.mg.gov.br/cte/services/RecepcaoEvento",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://hcte.fazenda.mg.gov.br/cte/services/RecepcaoEvento?wsdl",
 			},
 			recepcaoOS: {
 				producaoUrl: "https://cte.fazenda.mg.gov.br/cte/services/CteRecepcaoOS",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://hcte.fazenda.mg.gov.br/cte/services/CteRecepcaoOS?wsdl",
 			},
 		},
 	},
@@ -116,31 +132,38 @@ export default {
 		servicos: {
 			recepcao: {
 				producaoUrl: "https://cte.fazenda.pr.gov.br/cte/CteRecepcao?wsdl",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.cte.fazenda.pr.gov.br/cte/CteRecepcao?wsdl",
 			},
 			retRecepcao: {
 				producaoUrl: "https://cte.fazenda.pr.gov.br/cte/CteRetRecepcao?wsdl",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.cte.fazenda.pr.gov.br/cte/CteRetRecepcao?wsdl",
 			},
 			inutilizacao: {
 				producaoUrl: "https://cte.fazenda.pr.gov.br/cte/CteInutilizacao?wsdl",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.cte.fazenda.pr.gov.br/cte/CteInutilizacao?wsdl",
 			},
 			consultaProtocolo: {
 				producaoUrl: "https://cte.fazenda.pr.gov.br/cte/CteConsulta?wsdl",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.cte.fazenda.pr.gov.br/cte/CteConsulta?wsdl",
 			},
 			statusServico: {
 				producaoUrl: "https://cte.fazenda.pr.gov.br/cte/CteStatusServico?wsdl",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.cte.fazenda.pr.gov.br/cte/CteStatusServico?wsdl",
 			},
 			recepcaoEvento: {
 				producaoUrl: "https://cte.fazenda.pr.gov.br/cte/CteRecepcaoEvento?wsdl",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.cte.fazenda.pr.gov.br/cte/CteRecepcaoEvento?wsdl",
 			},
 			recepcaoOS: {
 				producaoUrl: "https://cte.fazenda.pr.gov.br/cte/CteRecepcaoOS?wsdl",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.cte.fazenda.pr.gov.br/cte/CteRecepcaoOS?wsdl",
 			},
 		},
 	},
@@ -150,37 +173,44 @@ export default {
 			recepcao: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cterecepcao/CteRecepcao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcao/CteRecepcao.asmx",
 			},
 			retRecepcao: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cteretrecepcao/cteRetRecepcao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cteretrecepcao/cteRetRecepcao.asmx",
 			},
 			inutilizacao: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cteinutilizacao/cteinutilizacao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cteinutilizacao/cteinutilizacao.asmx",
 			},
 			consultaProtocolo: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cteconsulta/CteConsulta.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cteconsulta/CteConsulta.asmx",
 			},
 			statusServico: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/ctestatusservico/CteStatusServico.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/ctestatusservico/CteStatusServico.asmx",
 			},
 			recepcaoEvento: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
 			},
 			recepcaoOS: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cterecepcaoos/cterecepcaoos.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoos/cterecepcaoos.asmx",
 			},
 		},
 	},
@@ -190,37 +220,44 @@ export default {
 			recepcao: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteWEB/services/cteRecepcao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteRecepcao.asmx",
 			},
 			retRecepcao: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteWEB/services/cteRetRecepcao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteRetRecepcao.asmx",
 			},
 			inutilizacao: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteWEB/services/cteInutilizacao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteInutilizacao.asmx",
 			},
 			consultaProtocolo: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteWEB/services/cteConsulta.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteConsulta.asmx",
 			},
 			statusServico: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteWEB/services/cteStatusServico.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteStatusServico.asmx",
 			},
 			recepcaoEvento: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteweb/services/cteRecepcaoEvento.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteweb/services/cteRecepcaoEvento.asmx",
 			},
 			recepcaoOS: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteWEB/services/cteRecepcaoOS.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteRecepcaoOS.asmx",
 			},
 		},
 	},
@@ -230,37 +267,44 @@ export default {
 			recepcao: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cterecepcao/CteRecepcao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcao/CteRecepcao.asmx",
 			},
 			retRecepcao: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cteretrecepcao/cteRetRecepcao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cteretrecepcao/cteRetRecepcao.asmx",
 			},
 			inutilizacao: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cteinutilizacao/cteinutilizacao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cteinutilizacao/cteinutilizacao.asmx",
 			},
 			consultaProtocolo: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cteconsulta/CteConsulta.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cteconsulta/CteConsulta.asmx",
 			},
 			statusServico: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/ctestatusservico/CteStatusServico.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/ctestatusservico/CteStatusServico.asmx",
 			},
 			recepcaoEvento: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
 			},
 			recepcaoOS: {
 				producaoUrl:
 					"https://cte.svrs.rs.gov.br/ws/cterecepcaoos/cterecepcaoos.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoos/cterecepcaoos.asmx",
 			},
 		},
 	},
@@ -270,22 +314,26 @@ export default {
 			recepcao: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteWEB/services/cteRecepcao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/CteRecepcao.asmx",
 			},
 			retRecepcao: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteWEB/services/CteRetRecepcao.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/CteRetRecepcao.asmx",
 			},
 			consultaProtocolo: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteWEB/services/CteConsulta.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/CteConsulta.asmx",
 			},
 			statusServico: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/cteWEB/services/CteStatusServico.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/CteStatusServico.asmx",
 			},
 		},
 	},
@@ -295,7 +343,8 @@ export default {
 			distribuicaoDFe: {
 				producaoUrl:
 					"https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
-				homologacaoUrl: "",
+				homologacaoUrl:
+					"https://hom1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
 			},
 		},
 	},

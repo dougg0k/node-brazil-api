@@ -68,12 +68,16 @@ export default {
 					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeInutilizacao4?WSDL",
 			},
 			consultaProtocolo: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeConsultaProtocolo4?WSDL",
+				homologacaoUrl:
+					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeConsultaProtocolo4?WSDL",
 			},
 			recepcaoEvento: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfce.sefaz.ce.gov.br/nfce4/services/NFeRecepcaoEvento4?WSDL",
+				homologacaoUrl:
+					"https://nfceh.sefaz.ce.gov.br/nfce4/services/NFeRecepcaoEvento4?WSDL",
 			},
 		},
 	},
@@ -105,16 +109,22 @@ export default {
 					"https://homolog.sefaz.go.gov.br/nfe/services/Nfeinutilizacao4.asmx",
 			},
 			consultaProtocolo: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfe.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4",
+				homologacaoUrl:
+					"https://homolog.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4",
 			},
 			recepcaoEvento: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfe.sefaz.go.gov.br/nfe/services/NFeRecepcaoEvento4",
+				homologacaoUrl:
+					"https://homolog.sefaz.go.gov.br/nfe/services/NFeRecepcaoEvento4",
 			},
 			consultaCadastro: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfe.sefaz.go.gov.br/nfe/services/CadConsultaCadastro4",
+				homologacaoUrl:
+					"https://homolog.sefaz.go.gov.br/nfe/services/CadConsultaCadastro4",
 			},
 		},
 	},
@@ -225,16 +235,16 @@ export default {
 					"https://hnfce.fazenda.mg.gov.br/nfce/services/Nfeinutilizacao4.asmx",
 			},
 			consultaProtocolo: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeConsultaProtocolo4",
+				homologacaoUrl:
+					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeConsultaProtocolo4",
 			},
 			recepcaoEvento: {
-				producaoUrl: "",
-				homologacaoUrl: "",
-			},
-			consultaCadastro: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfce.fazenda.mg.gov.br/nfce/services/NFeRecepcaoEvento4",
+				homologacaoUrl:
+					"https://hnfce.fazenda.mg.gov.br/nfce/services/NFeRecepcaoEvento4",
 			},
 		},
 	},
@@ -262,16 +272,21 @@ export default {
 					"https://homologacao.nfce.sefa.pr.gov.br/nfce/Nfeinutilizacao4.asmx",
 			},
 			consultaProtocolo: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					" https://nfce.sefa.pr.gov.br/nfce/NFeConsultaProtocolo4?wsdl",
+				homologacaoUrl:
+					"https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeConsultaProtocolo4?wsdl",
 			},
 			recepcaoEvento: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl: "https://nfce.sefa.pr.gov.br/nfce/NFeRecepcaoEvento4?wsdl",
+				homologacaoUrl:
+					"https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeRecepcaoEvento4?wsdl",
 			},
 			consultaCadastro: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfce.sefa.pr.gov.br/nfce/CadConsultaCadastro4?wsdl",
+				homologacaoUrl:
+					"https://homologacao.nfce.sefa.pr.gov.br/nfce/CadConsultaCadastro4?wsdl",
 			},
 		},
 	},
@@ -303,16 +318,16 @@ export default {
 					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
 			},
 			consultaProtocolo: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfce.sefazrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+				homologacaoUrl:
+					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
 			},
 			recepcaoEvento: {
-				producaoUrl: "",
-				homologacaoUrl: "",
-			},
-			consultaCadastro: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfce.sefazrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+				homologacaoUrl:
+					"https://nfce-homologacao.sefazrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
 			},
 		},
 	},
@@ -344,16 +359,16 @@ export default {
 					"https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
 			},
 			consultaProtocolo: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+				homologacaoUrl:
+					"https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
 			},
 			recepcaoEvento: {
-				producaoUrl: "",
-				homologacaoUrl: "",
-			},
-			consultaCadastro: {
-				producaoUrl: "",
-				homologacaoUrl: "",
+				producaoUrl:
+					"https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+				homologacaoUrl:
+					"https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
 			},
 		},
 	},
