@@ -41,3 +41,5 @@ export type Autorizadores = {
 		};
 	};
 };
+
+export type Ambiente = "homologacao" | "producao";
