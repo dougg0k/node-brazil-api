@@ -1,20 +1,18 @@
-export function verifyEstadoSigla(
+import { Client } from "soap";
+import { ambiente, passphrase, pfx } from "../utils/setupGovAPI";
+import { clientSoap } from "../utils/soapSetup";
+import { buildUrl } from "../utils/urlHelper";
+import { preRequestValidator } from "../utils/validators";
+import autorizadoresNfe from "./autorizadoresNfe";
+
+export async function setupNFe(
 	estadoSigla: string,
-	autorizadores: Record<string, unknown>,
-): void {
-	if (!estadoSigla) {
-		throw new Error("A sigla é necessária");
-	}
-	if (typeof estadoSigla !== "string") {
-		throw new Error("Deve ser do tipo string");
-	}
-	if (estadoSigla.length !== 2) {
-		throw new Error("A sigla contêm apenas 2 digitos");
-	}
-	const autorizador = Object.keys(autorizadores).find(
-		(sigla) => sigla === estadoSigla,
-	);
-	if (!autorizador) {
-		throw new Error("Estado não encontrado, verifique se sua sigla existe.");
-	}
+	servico: string,
+): Promise<Client> {
+	preRequestValidator(estadoSigla, autorizadoresNfe, servico);
+	const url = buildUrl(autorizadoresNfe, estadoSigla, servico, ambiente);
+	return await clientSoap(url, {
+		certificatePfx: pfx,
+		passphrase: passphrase,
+	});
 }

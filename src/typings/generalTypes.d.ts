@@ -1,4 +1,4 @@
-type Siglas =
+export type Sigla =
 	| "AM"
 	| "AC"
 	| "AL"
@@ -34,7 +34,7 @@ type Siglas =
 	| "AN";
 
 export type Autorizadores = {
-	[sigla in Siglas]?: {
+	[sigla in Sigla]?: {
 		nome: string;
 		servicos: {
 			[servico: string]: { producaoUrl: string; homologacaoUrl: string };

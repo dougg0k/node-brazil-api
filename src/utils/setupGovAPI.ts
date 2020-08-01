@@ -1,5 +1,5 @@
 import { SetupGovError } from "../errors/SetupGovError";
-import { Ambiente } from "./generalTypes";
+import { Ambiente } from "../typings/generalTypes";
 
 export let ambiente;
 export let pfx;
@@ -20,7 +20,7 @@ export function setupGovAPI(options: {
 		throw new SetupGovError("Certificado Digital PFX é necessario");
 	}
 	if (!Buffer.isBuffer(options.pfx)) {
-		throw new SetupGovError("Tipo do certificado digital precisa ser Buffer");
+		throw new SetupGovError("O certificado digital precisa ser do tipo Buffer");
 	}
 	if (!options.passphrase) {
 		throw new SetupGovError("Passphrase do certificado digital é necessario");

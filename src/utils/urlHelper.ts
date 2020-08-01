@@ -1,4 +1,4 @@
-import { Ambiente, Autorizadores } from "./generalTypes.d";
+import { Ambiente, Autorizadores } from "../typings/generalTypes";
 
 export function buildUrl(
 	autorizadores: Autorizadores,

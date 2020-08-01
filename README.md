@@ -24,3 +24,10 @@ npm i node-gov-api
 - NfeStatusServico - Consulta do status do servico prestado pelo portal SEFAZ
 - NfeAutorizacao - Envio do XML para solicitacao de autorizacao de uso
 - NfeRetAutorizacao - Retorno da solicitacao de autorizacao de uso
+
+---
+
+TODO:
+
+- Toda interface precisara de confirmacao em input e output
+- Precisa ser feita interface para Async e Sync

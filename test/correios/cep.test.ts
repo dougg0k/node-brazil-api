@@ -1,5 +1,5 @@
-import { fetchCEP } from "../src/correios/cep";
-import { CorreiosCEPError } from "./../src/errors/CorreiosCEPError";
+import { fetchCEP } from "../../src/correios/cep";
+import { CorreiosCEPError } from "../../src/errors/CorreiosCEPError";
 
 describe("test correios requests", () => {
 	test("fetch cep", async () => {

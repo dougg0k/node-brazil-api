@@ -1,3 +1,4 @@
+import { Autorizadores } from "../typings/generalTypes";
 import {
 	AUTORIZACAO,
 	CONSULTA_CADASTRO,
@@ -8,7 +9,6 @@ import {
 	RET_AUTORIZACAO,
 	STATUS_SERVICO,
 } from "./../utils/constants";
-import { Autorizadores } from "./../utils/generalTypes.d";
 
 const autorizadoresNfe: Autorizadores = {
 	AM: {
@@ -489,7 +489,7 @@ const autorizadoresNfe: Autorizadores = {
 				homologacaoUrl:
 					"https://homologacao.nfe.fazenda.sp.gov.br/ws/nfeinutilizacao4.asmx?wsdl",
 			},
-			consultarProtocolo: {
+			[CONSULTA_PROTOCOLO]: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/ws/nfeconsultaprotocolo4.asmx?wsdl",
 				homologacaoUrl:
@@ -501,7 +501,7 @@ const autorizadoresNfe: Autorizadores = {
 				homologacaoUrl:
 					"https://homologacao.nfe.fazenda.sp.gov.br/ws/nferecepcaoevento4.asmx?wsdl",
 			},
-			consultarCadastro: {
+			[CONSULTA_CADASTRO]: {
 				producaoUrl:
 					"https://nfe.fazenda.sp.gov.br/ws/cadconsultacadastro4.asmx?wsdl",
 				homologacaoUrl:
