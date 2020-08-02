@@ -1,5 +1,5 @@
 import { promisify } from "util";
-import { ConsultaCadastroError } from "../../errors/ConsultaCadastroError";
+import { RecepcaoEventoError } from "../../errors/RecepcaoEventoError";
 import { Sigla } from "../../typings/generalTypes";
 import { setupNFe } from "../helper";
 import { RECEPCAO_EVENTO } from "./../../utils/constants";
@@ -11,7 +11,7 @@ export async function recepcaoEventoSync(sigla: Sigla): Promise<any> {
 		const data = await nfeRecepcaoEvento({});
 		return data;
 	} catch (err) {
-		throw new ConsultaCadastroError(err);
+		throw new RecepcaoEventoError(err);
 	}
 }
 
@@ -22,6 +22,6 @@ export async function recepcaoEventoAsync(sigla: Sigla): Promise<any> {
 		const data = await nfeRecepcaoEventoAsync({});
 		return data;
 	} catch (err) {
-		throw new ConsultaCadastroError(err);
+		throw new RecepcaoEventoError(err);
 	}
 }

@@ -1,5 +1,5 @@
 import { promisify } from "util";
-import { ConsultaCadastroError } from "../../errors/ConsultaCadastroError";
+import { StatusServicoError } from "../../errors/StatusServicoError";
 import { Sigla } from "../../typings/generalTypes";
 import { setupNFe } from "../helper";
 import { STATUS_SERVICO } from "./../../utils/constants";
@@ -11,7 +11,7 @@ export async function statusServicoSync(sigla: Sigla): Promise<any> {
 		const data = await nfeStatusServicoNF({});
 		return data;
 	} catch (err) {
-		throw new ConsultaCadastroError(err);
+		throw new StatusServicoError(err);
 	}
 }
 
@@ -22,6 +22,6 @@ export async function statusServicoAsync(sigla: Sigla): Promise<any> {
 		const data = await nfeStatusServicoNFAsync({});
 		return data;
 	} catch (err) {
-		throw new ConsultaCadastroError(err);
+		throw new StatusServicoError(err);
 	}
 }

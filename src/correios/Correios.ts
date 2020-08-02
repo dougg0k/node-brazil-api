@@ -1,4 +1,4 @@
-export interface CorreiosCEPResponse {
+export interface CorreiosCEPSaida {
 	bairro: string;
 	cep: string;
 	cidade: string;

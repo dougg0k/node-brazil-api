@@ -1,5 +1,5 @@
 import { promisify } from "util";
-import { ConsultaCadastroError } from "../../errors/ConsultaCadastroError";
+import { DistribuicaoDfeError } from "../../errors/DistribuicaoDfeError";
 import { Sigla } from "../../typings/generalTypes";
 import { setupNFe } from "../helper";
 import { DISTRIBUICAO_DFE } from "./../../utils/constants";
@@ -11,7 +11,7 @@ export async function distribuicaoDFeSync(sigla: Sigla): Promise<any> {
 		const data = await nfeDistDFeInteresse({});
 		return data;
 	} catch (err) {
-		throw new ConsultaCadastroError(err);
+		throw new DistribuicaoDfeError(err);
 	}
 }
 
@@ -24,6 +24,6 @@ export async function distribuicaoDFeAsync(sigla: Sigla): Promise<any> {
 		const data = await nfeDistDFeInteresseAsync({});
 		return data;
 	} catch (err) {
-		throw new ConsultaCadastroError(err);
+		throw new DistribuicaoDfeError(err);
 	}
 }

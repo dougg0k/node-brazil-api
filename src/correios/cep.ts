@@ -1,10 +1,10 @@
 import { promisify } from "util";
 import { clientSoap } from "../utils/soapSetup";
 import { CorreiosCEPError } from "./../errors/CorreiosCEPError";
-import { CorreiosCEPResponse } from "./Correios";
+import { CorreiosCEPSaida } from "./Correios";
 import { CORREIOS_SOAP_ENDPOINT, formatCEP, validateCEP } from "./helper";
 
-export async function fetchCEP(cep: string): Promise<CorreiosCEPResponse> {
+export async function fetchCEP(cep: string): Promise<CorreiosCEPSaida> {
 	validateCEP(cep);
 	cep = formatCEP(cep);
 	try {

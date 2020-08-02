@@ -5,7 +5,7 @@ import { CONSULTA_CADASTRO } from "../../utils/constants";
 import { setupNFe } from "../helper";
 import { ConsultaCadastroSaida } from "./ConsultaCadastro";
 
-export async function consultarCadastroSync(
+export async function consultaCadastroSync(
 	sigla: Sigla,
 ): Promise<ConsultaCadastroSaida> {
 	try {
@@ -18,7 +18,7 @@ export async function consultarCadastroSync(
 	}
 }
 
-export async function consultarCadastroAsync(
+export async function consultaCadastroAsync(
 	sigla: Sigla,
 ): Promise<ConsultaCadastroSaida> {
 	try {

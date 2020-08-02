@@ -5,7 +5,7 @@ import { AUTORIZACAO } from "../../utils/constants";
 import { setupNFe } from "../helper";
 import { AutorizacaoSaida } from "./Autorizacao";
 
-export async function autorizarNfeSync(
+export async function autorizacaoNfeSync(
 	sigla: Sigla,
 ): Promise<AutorizacaoSaida> {
 	try {
@@ -18,7 +18,7 @@ export async function autorizarNfeSync(
 	}
 }
 
-export async function autorizarNfeAsync(
+export async function autorizacaoNfeAsync(
 	sigla: Sigla,
 ): Promise<AutorizacaoSaida> {
 	try {

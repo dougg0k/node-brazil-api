@@ -1,5 +1,5 @@
 import { promisify } from "util";
-import { ConsultaCadastroError } from "../../errors/ConsultaCadastroError";
+import { InutilizacaoError } from "../../errors/InutilizacaoError";
 import { Sigla } from "../../typings/generalTypes";
 import { setupNFe } from "../helper";
 import { INUTILIZACAO } from "./../../utils/constants";
@@ -11,7 +11,7 @@ export async function inutilizacaoSync(sigla: Sigla): Promise<any> {
 		const data = await nfeInutilizacaoNF({});
 		return data;
 	} catch (err) {
-		throw new ConsultaCadastroError(err);
+		throw new InutilizacaoError(err);
 	}
 }
 
@@ -22,6 +22,6 @@ export async function inutilizacaoAsync(sigla: Sigla): Promise<any> {
 		const data = await nfeInutilizacaoNFAsync({});
 		return data;
 	} catch (err) {
-		throw new ConsultaCadastroError(err);
+		throw new InutilizacaoError(err);
 	}
 }

@@ -1,5 +1,5 @@
 import { promisify } from "util";
-import { ConsultaCadastroError } from "../../errors/ConsultaCadastroError";
+import { RetAutorizacaoError } from "../../errors/RetAutorizacaoError";
 import { setupNFe } from "../helper";
 import { Sigla } from "./../../typings/generalTypes.d";
 import { RET_AUTORIZACAO } from "./../../utils/constants";
@@ -11,7 +11,7 @@ export async function retAutorizacaoSync(sigla: Sigla): Promise<any> {
 		const data = await nfeRetAutorizacaoLote({});
 		return data;
 	} catch (err) {
-		throw new ConsultaCadastroError(err);
+		throw new RetAutorizacaoError(err);
 	}
 }
 
@@ -24,6 +24,6 @@ export async function retAutorizacaoAsync(sigla: Sigla): Promise<any> {
 		const data = await nfeRetAutorizacaoLoteAsync({});
 		return data;
 	} catch (err) {
-		throw new ConsultaCadastroError(err);
+		throw new RetAutorizacaoError(err);
 	}
 }

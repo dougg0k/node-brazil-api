@@ -11,3 +11,6 @@ export const CONSULTA = "consulta";
 export const CONST_NAO_ENC = "consNaoEnc";
 export const RECEPCAO_SINC = "recepcaoSinc";
 export const QR_CODE = "qrCode";
+export const RECEPCAO = "recepcao";
+export const RET_RECEPCAO = "retRecepcao";
+export const URL = "url";
