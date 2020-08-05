@@ -1,3 +1,4 @@
+import { Autorizadores } from "../typings/generalTypes";
 import {
 	AUTORIZACAO,
 	CONSULTA_CADASTRO,
@@ -8,7 +9,7 @@ import {
 	STATUS_SERVICO,
 } from "../utils/constants";
 
-export default {
+const autorizadoresNfce: Autorizadores = {
 	AM: {
 		nome: "Amazonas",
 		servicos: {
@@ -434,3 +435,5 @@ export default {
 		},
 	},
 };
+
+export default autorizadoresNfce;

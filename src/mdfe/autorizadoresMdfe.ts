@@ -1,3 +1,4 @@
+import { Autorizadores } from "../typings/generalTypes";
 import {
 	CONST_NAO_ENC,
 	CONSULTA,
@@ -9,7 +10,8 @@ import {
 	RET_RECEPCAO,
 	STATUS_SERVICO,
 } from "./../utils/constants";
-export default {
+
+const autorizadoresMdfe: Autorizadores = {
 	SVRS: {
 		nome: "SEFAZ Virtual Rio Grande do Sul",
 		servicos: {
@@ -68,3 +70,5 @@ export default {
 		},
 	},
 };
+
+export default autorizadoresMdfe;

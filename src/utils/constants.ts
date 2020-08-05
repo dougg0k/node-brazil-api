@@ -16,7 +16,7 @@ export const RET_RECEPCAO = "retRecepcao";
 export const URL = "url";
 
 export const NFE_VERSAO_ATUAL = "4.00";
-export const NFE_NS = "http://www.portalfiscal.inf.br/nfe";
+export const NFE_NAMESPACE = "http://www.portalfiscal.inf.br/nfe";
 
 export const TAG_RAIZ = {
 	ENVI_NFE: "enviNFe",

@@ -1,3 +1,4 @@
+import { Autorizadores } from "../typings/generalTypes";
 import {
 	CONSULTA_PROTOCOLO,
 	DISTRIBUICAO_DFE,
@@ -9,7 +10,7 @@ import {
 	STATUS_SERVICO,
 } from "../utils/constants";
 
-export default {
+const autorizadoresCte: Autorizadores = {
 	MT: {
 		nome: "Mato Grosso",
 		servicos: {
@@ -283,6 +284,26 @@ export default {
 	},
 	SVRS: {
 		nome: "Sefaz Virtual Rio Grande do Sul",
+		estadosSuportados: [
+			"AC",
+			"AL",
+			"AM",
+			"BA",
+			"CE",
+			"DF",
+			"ES",
+			"GO",
+			"MA",
+			"PA",
+			"PB",
+			"PI",
+			"RJ",
+			"RN",
+			"RO",
+			"SC",
+			"SE",
+			"TO",
+		],
 		servicos: {
 			[RECEPCAO]: {
 				producaoUrl:
@@ -330,6 +351,7 @@ export default {
 	},
 	SVSP: {
 		nome: "Sefaz Virtual São Paulo",
+		estadosSuportados: ["AP", "PE", "RR"],
 		servicos: {
 			[RECEPCAO]: {
 				producaoUrl:
@@ -369,3 +391,5 @@ export default {
 		},
 	},
 };
+
+export default autorizadoresCte;

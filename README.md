@@ -12,11 +12,22 @@ npm i node-gov-api
 
 ### Uso
 
+```javascript
+const govApi = require("node-gov-api");
+
+// Para uso das APIs do Governo, pfx ou pem é necessário, e o passphrase caso conter.
+govApi.setupAccess({ ambiente: Ambiente, passphrase?: string, pfx?: Buffer, privatePEM?: Buffer, publicPEM?: Buffer });
+
+// Para uso da NFE
+const resultado = await govApi.NFE.autorizacaoNfeSync({ /* Dados */ });
+
+// Para uso dos Correios
+const resultado = await govApi.Correios.fetchCEP(cep: string);
+
+// Para outras APIs, cheque as funcoes exportadas em seus respectivos objetos. NFE, NFCE, MDFE, CTE, Correios.
 ```
 
-```
-
-### Descricao
+---
 
 - RecepcaoEvento - Recepcao de mensagem de evento (Cancelamento)
 - NfeInutilizacao - Atendimento de solicitacoes de inutilizacao de numeracao
@@ -40,8 +51,6 @@ TODO:
 
 - Toda interface precisara de confirmacao em entrada e saida
 - Precisa ser feita interface para Async e Sync
-- Conseguir a assinatura para o XML
-- Verificar quais headers usar
 - Talvez precise ter os calculos feitos direto na biblioteca
 - Precisaria redirecionar requests de estados que nao possuem SEFAZ para endpoints no quais sao utilizados para esses. Geralmente os virtuais.
 
@@ -49,8 +58,8 @@ TODO:
 
 Commandos:
 
-- Criar PEM private key `openssl pkcs12 -in yourP12File.pfx -nocerts -out privateKey.pem`
-- Criar PEM public key `openssl pkcs12 -in yourP12File.pfx -clcerts -nokeys -out publicKey.pem`
+- Criar chave PEM privada `openssl pkcs12 -in yourP12File.pfx -nocerts -out privateKey.pem`
+- Criar chave PEM publica `openssl pkcs12 -in yourP12File.pfx -clcerts -nokeys -out publicKey.pem`
 
 ---
 

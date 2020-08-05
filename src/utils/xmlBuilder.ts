@@ -1,5 +1,5 @@
 import { Client } from "soap";
-import { NFE_NS, NFE_VERSAO_ATUAL } from "./constants";
+import { NFE_NAMESPACE, NFE_VERSAO_ATUAL } from "./constants";
 import { signXmlX509 } from "./signXML";
 import { parseJSONToXML } from "./xmlParser";
 
@@ -17,7 +17,7 @@ export function buildBaseXml<T>(
 	};
 	if (!!childRootAttr) {
 		objToParse.nfeDadosMsg[childRootAttr] = {
-			$xmlns: NFE_NS,
+			$xmlns: NFE_NAMESPACE,
 			$versao: NFE_VERSAO_ATUAL,
 			...data,
 		};

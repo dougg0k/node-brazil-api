@@ -31,6 +31,7 @@ export type Sigla =
 	| "SVRS"
 	| "SVC-AN"
 	| "SVC-RS"
+	| "SVSP"
 	| "AN";
 
 export type Autorizadores = {
