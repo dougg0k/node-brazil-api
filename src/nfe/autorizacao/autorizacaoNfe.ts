@@ -1,18 +1,27 @@
 import { promisify } from "util";
 import { AutorizacaoError } from "../../errors/AutorizacaoError";
 import { Sigla } from "../../typings/generalTypes";
-import { AUTORIZACAO } from "../../utils/constants";
+import { AUTORIZACAO, TAG_RAIZ } from "../../utils/constants";
+import { buildBaseXml, getRootAttr } from "../../utils/xmlBuilder";
 import { setupNFe } from "../helper";
-import { AutorizacaoSaida } from "./Autorizacao";
+import { EnviNFe, RetEnviNFe } from "./Autorizacao";
 
 export async function autorizacaoNfeSync(
 	sigla: Sigla,
-): Promise<AutorizacaoSaida> {
+	data: EnviNFe,
+): Promise<RetEnviNFe> {
 	try {
-		const response = await setupNFe(sigla, AUTORIZACAO);
-		const nfeAutorizacaoLote = promisify(response.nfeAutorizacaoLote);
-		const data = await nfeAutorizacaoLote({});
-		return data;
+		const client = await setupNFe(sigla, AUTORIZACAO);
+		const rootAttribute = getRootAttr(client);
+		const xml = buildBaseXml<EnviNFe>(
+			data,
+			"infNFe",
+			rootAttribute,
+			TAG_RAIZ.ENVI_NFE,
+		);
+		const nfeAutorizacaoLote = promisify(client.nfeAutorizacaoLote);
+		const nfeData = await nfeAutorizacaoLote({ _xml: xml });
+		return nfeData.retEnviNFe;
 	} catch (err) {
 		throw new AutorizacaoError(err);
 	}
@@ -20,12 +29,20 @@ export async function autorizacaoNfeSync(
 
 export async function autorizacaoNfeAsync(
 	sigla: Sigla,
-): Promise<AutorizacaoSaida> {
+	data: EnviNFe,
+): Promise<RetEnviNFe> {
 	try {
-		const response = await setupNFe(sigla, AUTORIZACAO);
-		const nfeAutorizacaoLoteAsync = promisify(response.nfeAutorizacaoLoteAsync);
-		const data = await nfeAutorizacaoLoteAsync({});
-		return data;
+		const client = await setupNFe(sigla, AUTORIZACAO);
+		const rootAttribute = getRootAttr(client);
+		const xml = buildBaseXml<EnviNFe>(
+			data,
+			"infNFe",
+			rootAttribute,
+			TAG_RAIZ.ENVI_NFE,
+		);
+		const nfeAutorizacaoLoteAsync = promisify(client.nfeAutorizacaoLoteAsync);
+		const nfeData = await nfeAutorizacaoLoteAsync({ _xml: xml });
+		return nfeData;
 	} catch (err) {
 		throw new AutorizacaoError(err);
 	}

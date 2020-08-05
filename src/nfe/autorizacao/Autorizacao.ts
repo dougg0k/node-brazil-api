@@ -1,22 +1,26 @@
-export interface AutorizacaoEntrada {
-	enviNFe: string;
-	versao: string;
+export interface EnviNFe {
 	idLote: string;
-	indSinc: string;
-	NFe: string;
+	indSinc: EnviNFeIndSinc;
+	NFe: NFe;
 }
 
-export interface AutorizacaoSaida {
-	retEnviNFe: string;
-	versao: string;
-	tpAmb: string;
+export interface RetEnviNFe {
 	verAplic: string;
-	cStat: string;
+	cStat: number;
 	xMotivo: string;
-	cUF: string;
+	cUF: number;
 	dhRecbto: string;
 	infRec: string;
-	nRec: string;
-	tMed: string;
-	protNFe: string;
+}
+
+export enum EnviNFeIndSinc {
+	ASSINC = "0",
+	SINC = "1",
+}
+
+export interface NFe {
+	infNFe: {
+		$Id: string;
+		$versao: string;
+	};
 }

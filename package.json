@@ -20,11 +20,18 @@
 	"private": true,
 	"dependencies": {
 		"dayjs": "^1.8.31",
-		"soap": "^0.32.0"
+		"fast-xml-parser": "^3.17.4",
+		"node-forge": "^0.9.1",
+		"request": "^2.88.2",
+		"soap": "^0.32.0",
+		"xml-crypto": "^1.5.3"
 	},
 	"devDependencies": {
 		"@types/jest": "^26.0.8",
 		"@types/node": "^14.0.27",
+		"@types/node-forge": "^0.9.4",
+		"@types/request": "^2.48.5",
+		"@types/xml-crypto": "^1.4.1",
 		"@typescript-eslint/eslint-plugin": "^3.7.1",
 		"@typescript-eslint/parser": "^3.7.1",
 		"eslint": "^7.5.0",
