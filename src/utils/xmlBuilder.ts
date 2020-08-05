@@ -25,13 +25,12 @@ export function buildBaseXml<T>(
 		objToParse.nfeDadosMsg = data;
 	}
 	const xmlParsed = parseJSONToXML(objToParse);
-	if (!!refElement) {
-		return signXmlX509(xmlParsed, refElement);
+	if (!refElement) {
+		return xmlParsed;
 	}
-	return xmlParsed;
+	return signXmlX509(xmlParsed, refElement);
 }
 
 export function getRootAttr(client: Client): string {
-	// @ts-ignore
-	return client.wsdl.definitions.xmlns.tns;
+	return client["wsdl"].definitions.xmlns.tns;
 }

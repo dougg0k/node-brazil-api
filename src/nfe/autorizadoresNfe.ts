@@ -599,6 +599,26 @@ const autorizadoresNfe: Autorizadores = {
 	},
 	"SVC-AN": {
 		nome: "Sefaz Virtual de Contingência Ambiente Nacional",
+		estadosSuportados: [
+			"AC",
+			"AL",
+			"AP",
+			"DF",
+			"ES",
+			"MG",
+			"PA",
+			"PB",
+			"PI",
+			"RJ",
+			"RN",
+			"RO",
+			"RR",
+			"RS",
+			"SC",
+			"SE",
+			"SP",
+			"TO",
+		],
 		servicos: {
 			[AUTORIZACAO]: {
 				producaoUrl:
@@ -640,6 +660,7 @@ const autorizadoresNfe: Autorizadores = {
 	},
 	"SVC-RS": {
 		nome: "Sefaz Virtual de Contingência Rio Grande do Sul",
+		estadosSuportados: ["AM", "BA", "CE", "GO", "MA", "MS", "MT", "PE", "PR"],
 		servicos: {
 			[AUTORIZACAO]: {
 				producaoUrl:
@@ -675,6 +696,7 @@ const autorizadoresNfe: Autorizadores = {
 	},
 	AN: {
 		nome: "Ambiente Nacional",
+		estadosSuportados: ["MA"],
 		servicos: {
 			[DISTRIBUICAO_DFE]: {
 				producaoUrl:

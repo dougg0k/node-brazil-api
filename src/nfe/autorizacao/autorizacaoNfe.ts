@@ -1,10 +1,11 @@
 import { promisify } from "util";
 import { AutorizacaoError } from "../../errors/AutorizacaoError";
 import { Sigla } from "../../typings/generalTypes";
+import { formatReturnData } from "../../utils/commonHelper";
 import { AUTORIZACAO, TAG_RAIZ } from "../../utils/constants";
 import { buildBaseXml, getRootAttr } from "../../utils/xmlBuilder";
 import { setupNFe } from "../helper";
-import { EnviNFe, RetEnviNFe } from "./Autorizacao";
+import { EnviNFe, EnviNFeIndSinc, RetEnviNFe } from "./Autorizacao";
 
 export async function autorizacaoNfeSync(
 	sigla: Sigla,
@@ -14,14 +15,14 @@ export async function autorizacaoNfeSync(
 		const client = await setupNFe(sigla, AUTORIZACAO);
 		const rootAttribute = getRootAttr(client);
 		const xml = buildBaseXml<EnviNFe>(
-			data,
+			{ ...data, indSinc: EnviNFeIndSinc.SINC },
 			"infNFe",
 			rootAttribute,
 			TAG_RAIZ.ENVI_NFE,
 		);
 		const nfeAutorizacaoLote = promisify(client.nfeAutorizacaoLote);
 		const nfeData = await nfeAutorizacaoLote({ _xml: xml });
-		return nfeData.retEnviNFe;
+		return formatReturnData(nfeData.retEnviNFe);
 	} catch (err) {
 		throw new AutorizacaoError(err);
 	}
@@ -35,7 +36,7 @@ export async function autorizacaoNfeAsync(
 		const client = await setupNFe(sigla, AUTORIZACAO);
 		const rootAttribute = getRootAttr(client);
 		const xml = buildBaseXml<EnviNFe>(
-			data,
+			{ ...data, indSinc: EnviNFeIndSinc.ASSINC },
 			"infNFe",
 			rootAttribute,
 			TAG_RAIZ.ENVI_NFE,

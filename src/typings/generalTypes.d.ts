@@ -36,6 +36,7 @@ export type Sigla =
 export type Autorizadores = {
 	[sigla in Sigla]?: {
 		nome: string;
+		estadosSuportados?: Array<string>;
 		servicos: {
 			[servico: string]: { producaoUrl: string; homologacaoUrl: string };
 		};

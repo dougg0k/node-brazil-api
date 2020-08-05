@@ -1,5 +1,4 @@
 import { NFE } from "../../src";
-import { EnviNFeIndSinc } from "../../src/nfe/autorizacao/Autorizacao";
 import { setupAccessOptions } from "../testHelper";
 
 describe("test nfe autorizacao", () => {
@@ -7,9 +6,8 @@ describe("test nfe autorizacao", () => {
 		setupAccessOptions();
 	});
 	test("test", async () => {
-		await NFE.autorizacaoNfeSync("SP", {
+		const data = await NFE.autorizacaoNfeSync("SP", {
 			idLote: "1",
-			indSinc: EnviNFeIndSinc.SINC,
 			NFe: {
 				infNFe: {
 					$Id: "1",
@@ -17,5 +15,6 @@ describe("test nfe autorizacao", () => {
 				},
 			},
 		});
+		console.log("DATA = ", data);
 	});
 });

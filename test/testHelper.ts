@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
-import { setupGovAPI } from "../src";
+import { setupAccess } from "../src";
 
 export function setupAccessOptions(): void {
-	setupGovAPI({
+	setupAccess({
 		ambiente: "homologacao",
 		passphrase: "123456",
 		pfx: fs.readFileSync(path.resolve(__dirname, "./CERT.pfx")),

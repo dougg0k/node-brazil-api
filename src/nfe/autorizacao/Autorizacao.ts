@@ -1,6 +1,6 @@
 export interface EnviNFe {
 	idLote: string;
-	indSinc: EnviNFeIndSinc;
+	indSinc?: EnviNFeIndSinc;
 	NFe: NFe;
 }
 
@@ -10,7 +10,10 @@ export interface RetEnviNFe {
 	xMotivo: string;
 	cUF: number;
 	dhRecbto: string;
-	infRec: string;
+	infRec: {
+		nRec: string;
+		tMed: string;
+	};
 }
 
 export enum EnviNFeIndSinc {
