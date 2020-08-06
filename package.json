@@ -1,5 +1,5 @@
 {
-	"name": "node-gov-api",
+	"name": "node-brazil-api",
 	"version": "0.1.0",
 	"description": "Biblioteca para acesso e realização de operações nas APIs do Governo Brasileiro e Correios",
 	"main": "./build/index.js",
@@ -15,7 +15,7 @@
 	"author": "Douglas Galdino",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dougg0k/node-gov-api"
+		"url": "https://github.com/dougg0k/node-brazil-api"
 	},
 	"private": true,
 	"dependencies": {

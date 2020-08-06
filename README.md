@@ -1,4 +1,4 @@
-# Node Gov API
+# Node Brazil API
 
 ### Biblioteca para acesso e realização de operações nas APIs do governo brasileiro, como NFe, NFCe, MDFe, CTe e CEP pelos Correios.
 
@@ -7,27 +7,36 @@
 ### Instalação
 
 ```
-npm i node-gov-api
+npm i node-brazil-api
 ```
 
 ### Uso
 
 ```javascript
-const govApi = require("node-gov-api");
+const brApi = require("node-brazil-api");
 
 // Para uso das APIs do Governo, pfx ou pem é necessário, e o passphrase caso conter.
-govApi.setupAccess({ ambiente: Ambiente, passphrase?: string, pfx?: Buffer, privatePEM?: Buffer, publicPEM?: Buffer });
+brApi.setupAccess({ ambiente: Ambiente, passphrase?: string, pfx?: Buffer, privatePEM?: Buffer, publicPEM?: Buffer });
 
 // Para uso da NFE
-const resultado = await govApi.NFE.autorizacaoNfeSync({ /* Dados */ });
+const resultado = await brApi.NFE.autorizacaoNfeSync({ /* Dados */ });
 
 // Para uso dos Correios
-const resultado = await govApi.Correios.fetchCEP(cep: string);
+const resultado = await brApi.Correios.fetchCEP(cep: string);
 
 // Para outras APIs, cheque as funcoes exportadas em seus respectivos objetos. NFE, NFCE, MDFE, CTE, Correios.
 ```
 
 ---
+
+Commandos:
+
+- Criar chave PEM privada `openssl pkcs12 -in yourP12File.pfx -nocerts -out privateKey.pem`
+- Criar chave PEM publica `openssl pkcs12 -in yourP12File.pfx -clcerts -nokeys -out publicKey.pem`
+
+---
+
+Rascunhos:
 
 - RecepcaoEvento - Recepcao de mensagem de evento (Cancelamento)
 - NfeInutilizacao - Atendimento de solicitacoes de inutilizacao de numeracao
@@ -53,13 +62,6 @@ TODO:
 - Precisa ser feita interface para Async e Sync
 - Talvez precise ter os calculos feitos direto na biblioteca
 - Precisaria redirecionar requests de estados que nao possuem SEFAZ para endpoints no quais sao utilizados para esses. Geralmente os virtuais.
-
----
-
-Commandos:
-
-- Criar chave PEM privada `openssl pkcs12 -in yourP12File.pfx -nocerts -out privateKey.pem`
-- Criar chave PEM publica `openssl pkcs12 -in yourP12File.pfx -clcerts -nokeys -out publicKey.pem`
 
 ---
 
@@ -91,3 +93,37 @@ Parâmetro de Saída: <nfeResultMsg>
 
 Signature vai em toda NFe, ou seja mesmo em um lote, cada NFe dentro do lote, contem uma Signature.
 Lote possui multiplas NFe. Um Lote possui um id(idLote), enquanto cada NFe, possui seu id (infNFe).
+
+---
+
+Sintegra:
+
+status
+code
+message
+cnpj
+nome_empresarial/razao_social
+nome_fantasia
+inscricao_estadual
+tipo_inscricao
+data_situacao_cadastral
+situacao_cnpj
+situacao_ie
+data_inicio_atividade
+regime_tributacao
+informacao_ie_como_destinatario
+porte_empresa
+cnae_principal
+cnae_principal.code
+cnae_principal.text
+data_fim_atividade
+uf
+cep
+municipio
+bairro
+logradouro
+complemento
+numero
+ibge
+ibge.codigo_municipio
+ibge.codigo_uf
