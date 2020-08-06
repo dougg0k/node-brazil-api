@@ -8,7 +8,9 @@ export async function fetchCEP(cep: string): Promise<CorreiosCEPSaida> {
 	validateCEP(cep);
 	cep = formatCEP(cep);
 	try {
-		const response = await clientSoap(CORREIOS_SOAP_ENDPOINT);
+		const response = await clientSoap(CORREIOS_SOAP_ENDPOINT, {
+			forceSoap12Headers: false,
+		});
 		const consultaCEP = promisify(response.consultaCEP);
 		const data = await consultaCEP({ cep });
 		return data.return;

@@ -24,7 +24,7 @@ export async function autorizacaoNfeSync(
 		const nfeData = await nfeAutorizacaoLote({ _xml: xml });
 		return formatReturnData(nfeData.retEnviNFe);
 	} catch (err) {
-		throw new AutorizacaoError(err);
+		throw new AutorizacaoError(err.message);
 	}
 }
 
@@ -45,6 +45,6 @@ export async function autorizacaoNfeAsync(
 		const nfeData = await nfeAutorizacaoLoteAsync({ _xml: xml });
 		return nfeData;
 	} catch (err) {
-		throw new AutorizacaoError(err);
+		throw new AutorizacaoError(err.message);
 	}
 }

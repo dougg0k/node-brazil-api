@@ -5,7 +5,8 @@ import {
 	pfx,
 	privatePEM,
 	publicPEM,
-} from "../utils/setupGovAPI";
+	rejectUnauthorized,
+} from "../utils/setupSefaz";
 import { clientSoap } from "../utils/soapSetup";
 import { buildUrl } from "../utils/urlHelper";
 import { preRequestValidator } from "../utils/validators";
@@ -22,6 +23,8 @@ export async function setupNFe(
 		passphrase: passphrase,
 		privateKey: privatePEM,
 		publicKey: publicPEM,
+		rejectUnauthorized: rejectUnauthorized,
+		forceSoap12Headers: true,
 	});
 	return client;
 }

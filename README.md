@@ -1,6 +1,6 @@
 # Node Brazil API
 
-### Biblioteca para acesso e realização de operações nas APIs do governo brasileiro, como NFe, NFCe, MDFe, CTe e CEP pelos Correios.
+### Biblioteca para acesso e realização de operações nas APIs do Brasil, como NFe, NFCe, MDFe, CTe pelo SEFAZ e CEP pelos Correios.
 
 ---
 
@@ -15,8 +15,8 @@ npm i node-brazil-api
 ```javascript
 const brApi = require("node-brazil-api");
 
-// Para uso das APIs do Governo, pfx ou pem é necessário, e o passphrase caso conter.
-brApi.setupAccess({ ambiente: Ambiente, passphrase?: string, pfx?: Buffer, privatePEM?: Buffer, publicPEM?: Buffer });
+// Para uso das APIs do SEFAZ, pfx ou pem é necessário, e o passphrase caso conter.
+brApi.setupAccess({ ambiente: Ambiente, passphrase?: string, pfx?: Buffer, privatePEM?: Buffer, publicPEM?: Buffer, rejectUnauthorized?: boolean });
 
 // Para uso da NFE
 const resultado = await brApi.NFE.autorizacaoNfeSync({ /* Dados */ });
@@ -29,10 +29,10 @@ const resultado = await brApi.Correios.fetchCEP(cep: string);
 
 ---
 
-Commandos:
+Comandos:
 
-- Criar chave PEM privada `openssl pkcs12 -in yourP12File.pfx -nocerts -out privateKey.pem`
-- Criar chave PEM publica `openssl pkcs12 -in yourP12File.pfx -clcerts -nokeys -out publicKey.pem`
+- Converter PFX para chave PEM privada `openssl pkcs12 -in yourP12File.pfx -nocerts -out privateKey.pem`
+- Converter PFX para chave PEM publica `openssl pkcs12 -in yourP12File.pfx -clcerts -nokeys -out publicKey.pem`
 
 ---
 
@@ -73,12 +73,11 @@ Fluxo NFE:
 - Cliente e o Destinatario
 - Parece que a parte tributaria e mais complexa, por conta do Sefaz, talvez isso complique na hora de montar as regras.
 - Cert expira dia 11 de agosto
-- Contingencia para ser algo que precisa ser feito tambem, parece ter relacao com Online e Offline - Talvez tenha tambem Formulario de Seguranca, Dpec, Scan.
+- Contingencia parece ser algo que precisa ser feito tambem, parece ter relacao com Online e Offline - Talvez tenha tambem Formulario de Seguranca, Dpec, Scan.
 - Situacoes como Internet, Webservice estejam online e dados sejam validos, e o cenario ideal. Porem precisa tratar dos outros pois nao e o unico cenario.
 - Header parece nao estar mais em uso pela Sefaz.
 - Ordem as propriedades no xml parece ter importancia
-- A base depois do <nfeDadosMsg> tem a versao 4.00 e o xmlns http://www.portalfiscal.inf.br/nfe, ex: consStatServ, porem nao o nfeDadosMsg, apenas testando para confirmar. Por padrao parece ja ter algo.
-- Ainda preciso confirmar se a Signature vai em todo o envio ou apenas apos ser processado pelo Sefaz
+- Ainda preciso confirmar se a Signature vai em todo o envio ou apenas apos ser processado pelo Sefaz ou mesmo se vai em todo tipo de request, provavelmente nao.
 
 Cenarios a serem tratados:
 

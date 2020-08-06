@@ -6,6 +6,7 @@ export let passphrase;
 export let pfx;
 export let privatePEM;
 export let publicPEM;
+export let rejectUnauthorized;
 
 export function setupAccess(options: {
 	ambiente: Ambiente;
@@ -13,6 +14,7 @@ export function setupAccess(options: {
 	pfx?: Buffer;
 	privatePEM?: Buffer;
 	publicPEM?: Buffer;
+	rejectUnauthorized?: boolean;
 }): void {
 	if (!options.ambiente) {
 		throw new SetupError("Precisa declarar o ambiente de uso");
@@ -37,4 +39,5 @@ export function setupAccess(options: {
 	pfx = options.pfx;
 	privatePEM = options.privatePEM;
 	publicPEM = options.publicPEM;
+	rejectUnauthorized = options.rejectUnauthorized;
 }

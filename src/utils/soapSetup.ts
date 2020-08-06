@@ -8,6 +8,8 @@ export async function clientSoap(
 		certificatePfx?: Buffer;
 		privateKey?: Buffer;
 		publicKey?: Buffer;
+		rejectUnauthorized?: boolean;
+		forceSoap12Headers?: boolean;
 	},
 ): Promise<Client> {
 	const customRequest = request.defaults({
@@ -16,7 +18,7 @@ export async function clientSoap(
 			key: options?.privateKey,
 			cert: options?.publicKey,
 			passphrase: options?.passphrase,
-			rejectUnauthorized: false,
+			rejectUnauthorized: options?.rejectUnauthorized || false,
 		},
 	});
 	const allOptions = {
@@ -26,17 +28,16 @@ export async function clientSoap(
 		attributesKey: "$attributes",
 		handleNilAsNull: true,
 		useEmptyTag: true,
-		forceSoap12Headers: true,
+		forceSoap12Headers: options?.forceSoap12Headers,
 		wsdl_headers: {
 			connection: "keep-alive",
 		},
 		wsdl_options: {
 			forever: true,
-			rejectUnauthorized: false,
 			pfx: options?.certificatePfx,
-			passphrase: options?.passphrase,
 			key: options?.privateKey,
 			cert: options?.publicKey,
+			passphrase: options?.passphrase,
 		},
 		request: customRequest,
 	};

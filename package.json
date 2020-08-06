@@ -1,7 +1,7 @@
 {
 	"name": "node-brazil-api",
 	"version": "0.1.0",
-	"description": "Biblioteca para acesso e realização de operações nas APIs do Governo Brasileiro e Correios",
+	"description": "Biblioteca para acesso e realização de operações nas APIs do SEFAZ e Correios, no Brasil",
 	"main": "./build/index.js",
 	"types": "./build/index.d.ts",
 	"files": [
@@ -17,9 +17,8 @@
 		"type": "git",
 		"url": "https://github.com/dougg0k/node-brazil-api"
 	},
-	"private": true,
 	"dependencies": {
-		"dayjs": "^1.8.31",
+		"dayjs": "^1.8.32",
 		"fast-xml-parser": "^3.17.4",
 		"node-forge": "^0.9.1",
 		"request": "^2.88.2",
@@ -27,14 +26,14 @@
 		"xml-crypto": "^1.5.3"
 	},
 	"devDependencies": {
-		"@types/jest": "^26.0.8",
+		"@types/jest": "^26.0.9",
 		"@types/node": "^14.0.27",
 		"@types/node-forge": "^0.9.4",
 		"@types/request": "^2.48.5",
 		"@types/xml-crypto": "^1.4.1",
-		"@typescript-eslint/eslint-plugin": "^3.7.1",
-		"@typescript-eslint/parser": "^3.7.1",
-		"eslint": "^7.5.0",
+		"@typescript-eslint/eslint-plugin": "^3.8.0",
+		"@typescript-eslint/parser": "^3.8.0",
+		"eslint": "^7.6.0",
 		"eslint-config-prettier": "^6.11.0",
 		"eslint-plugin-jest": "^23.20.0",
 		"eslint-plugin-prettier": "^3.1.4",

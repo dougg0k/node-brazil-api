@@ -1,6 +1,6 @@
 import forge from "node-forge";
 import xmlCrypto from "xml-crypto";
-import { passphrase, privatePEM, publicPEM } from "./setupGovAPI";
+import { passphrase, privatePEM, publicPEM } from "./setupSefaz";
 
 function getDecryptedKey(): Buffer {
 	const decryptedKey = forge.pki.decryptRsaPrivateKey(privatePEM, passphrase);
@@ -18,6 +18,9 @@ function infoProvider(pem: Buffer) {
 			return `<X509Data><X509Certificate>${cert}</X509Certificate></X509Data>`;
 		},
 		getCert() {
+			if (!pem) {
+				throw new Error("Chave PEM faltando");
+			}
 			const certLines = pem.toString().split("\n");
 			return certLines
 				.filter((line: string) => !line.includes("-----"))
