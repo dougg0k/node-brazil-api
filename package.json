@@ -13,6 +13,7 @@
 		"build": "rimraf ./build && tsc -b ./tsconfig.build.json"
 	},
 	"author": "Douglas Galdino",
+	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/dougg0k/node-brazil-api"
