@@ -1,6 +1,6 @@
 # Node Brazil API - WIP
 
-#### Eu dei inicio sem conhecimento nenhum em NFe e ninguem para ajudar, porem agora acho que nao vou ter tempo para continuar, quem estiver interessado, fique livre para fazer um fork. Eu tentei escrever uma boa base.
+> Eu dei inicio sem conhecimento nenhum em NFe e ninguem para ajudar, porem agora acho que nao vou ter tempo para continuar, quem estiver interessado, fique livre para fazer um fork. Eu tentei escrever uma boa base.
 
 ### Biblioteca para acesso e realização de operações nas APIs do Brasil, como NFe, NFCe, MDFe, CTe pelo SEFAZ e CEP pelos Correios.
 
