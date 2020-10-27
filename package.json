@@ -33,7 +33,7 @@
 		"node-forge": "^0.9.1",
 		"request": "^2.88.2",
 		"soap": "^0.32.0",
-		"xml-crypto": "^1.5.3"
+		"xml-crypto": "^2.0.0"
 	},
 	"devDependencies": {
 		"@types/jest": "^26.0.9",
